@@ -18,7 +18,9 @@ def view_tasks():
 
 
 def delete_task(task):
-    return
+    for i, item in enumerate(tasks):
+        if item == task:
+            tasks.pop(i)
 # Step 5: Mark task complete
 
 
@@ -32,7 +34,7 @@ if __name__ == "__main__":
     add_task("Finish Cyber 201 assignment")
     add_task("Push code to GitHub")
     delete_task("Push code to GitHub")
-    print(view_tasks())
+    view_tasks()
     mark_complete(0)
-    print(view_tasks())
+    view_tasks()
 #   save_tasks()
