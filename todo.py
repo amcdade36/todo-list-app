@@ -11,17 +11,19 @@ def add_task(task):
 # Step 3: View tasks
 
 
-def veiw_tasks():
-    return tasks
+def view_tasks():
+    for i, task in enumerate(tasks, start=1):
+        print(f"{i}: {task}")
 # Step 4: Delete a task
 
 
-def delete_task():
-
+def delete_task(task):
+    return
 # Step 5: Mark task complete
 
 
-def mark_complete():
+def mark_complete(task):
+    return
 # Step 6: Save/load tasks (extra stretch for today)
 
 
@@ -29,7 +31,8 @@ def mark_complete():
 if __name__ == "__main__":
     add_task("Finish Cyber 201 assignment")
     add_task("Push code to GitHub")
-    view_tasks()
+    delete_task("Push code to GitHub")
+    print(view_tasks())
     mark_complete(0)
-    view_tasks()
-    save_tasks()
+    print(view_tasks())
+#   save_tasks()
