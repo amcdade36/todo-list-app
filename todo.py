@@ -17,15 +17,15 @@ def view_tasks():
 # Step 4: Delete a task
 
 
-def delete_task(task):
-    tasks.pop(task)
+def delete_task(index):
+    tasks.pop(index)
 # Step 5: Mark task complete
 
 
-def mark_complete(task):
-    for i in tasks:
-        if tasks.index(i) == task:
-            tasks[task] = f"{i} ✅"
+def mark_complete(index):
+    for task in tasks:
+        if tasks.index(task) == index:
+            tasks[task] = f"{task} ✅"
 
 # Step 6: Save/load tasks (extra stretch for today)
 
