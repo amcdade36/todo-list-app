@@ -34,8 +34,9 @@ def mark_complete(task):
 if __name__ == "__main__":
     add_task("Finish Cyber 201 assignment")
     add_task("Push code to GitHub")
-#    delete_task()
+    add_task("research agartha")
+    delete_task(2)
     view_tasks()
     mark_complete(0)
     view_tasks()
-#   save_tasks()
+#    save_tasks()
