@@ -18,14 +18,13 @@ def view_tasks():
 
 
 def delete_task(task):
-    for i, item in enumerate(tasks):
-        if item == task:
-            tasks.pop(i)
+    tasks.pop(task)
 # Step 5: Mark task complete
 
 
 def mark_complete(task):
-    return
+    task = f"{task} ✅"
+
 # Step 6: Save/load tasks (extra stretch for today)
 
 
@@ -33,7 +32,7 @@ def mark_complete(task):
 if __name__ == "__main__":
     add_task("Finish Cyber 201 assignment")
     add_task("Push code to GitHub")
-    delete_task("Push code to GitHub")
+    delete_task(0)
     view_tasks()
     mark_complete(0)
     view_tasks()
