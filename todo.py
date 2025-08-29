@@ -23,9 +23,7 @@ def delete_task(index):
 
 
 def mark_complete(index):
-    for task in tasks:
-        if tasks.index(task) == index:
-            tasks[task] = f"{task} ✅"
+    tasks[index] = f"{tasks[index]} ✅"
 
 # Step 6: Save/load tasks (extra stretch for today)
 
@@ -34,8 +32,6 @@ def mark_complete(index):
 if __name__ == "__main__":
     add_task("Finish Cyber 201 assignment")
     add_task("Push code to GitHub")
-    add_task("research agartha")
-    delete_task(2)
     view_tasks()
     mark_complete(0)
     view_tasks()
